@@ -3,6 +3,7 @@ import styled from "styled-components"
 import logo from "../assets/login-logo.svg"
 import bgImg from "../assets/login-hero.svg"
 import googleIcon from "../assets/google.svg"
+import { Link } from 'react-router-dom'
 
 const Login = (props) => {
 
@@ -10,9 +11,9 @@ const Login = (props) => {
   return (
     <Container>
         <Nav>
-            <a href='/'>
+            <Link to='/'>
                 <img src={logo} alt='linkedinlogo'/>
-            </a>
+            </Link>
             <div>
                 <Join>Join Now</Join>
                 <SignIn>Sign In</SignIn>
